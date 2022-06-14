@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Poppins:wght@300;400;500;700");
+
+body {
+  background-color: DFDFDE;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1em;
+}
+
+h1, h2 {
+  font-family: 'poppins', sans-serif;
+  font-weight: 300;
+}
+
+h1 {
+  font-size: 32px;
+  color:#1f6482;
+  font-weight: bolder;
+  line-height:2rem
+}
+
+h2 {
+  font-size: 24px;
+  color:#163e3a;
+}
+
+a {
+  color: #59b17a;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover{
+  color: #1f6482;
+}
+
+ul{
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+  font-size: 32px;
+  margin: 0 8px;
+}
+.img-circle{
+  border-radius: 50%;
+}
+
+.container {
+  padding: 25px 0;
+  width: 900px;
+  margin:auto;
+}
+
+.card {
+
+  margin:24px auto;
+  padding: 16px 40px;
+  box-shadow: 0 10px 30px rgba(0,0,0,.2);
+  text-align: center;
+  border-radius: 4px;
+  background-color:white;
+}
+
+.list-inline {
+  display: inline-block;
+}
+
+#special{
+  color:#060707;
+  font-size: 24px;
+}
+
+#special:hover{
+  color: #1f6482;
+}
+
+@media (max-width: 960px) {
+  /* Pour un écran < 960px, cette classe CSS s'applique */
+  .container {
+    width: 700px;
+  }
+}
+
+
+@media (max-width: 720px) {
+  /* Pour un écran < 720px, cette classe CSS s'applique */
+  .container {
+    width: 500px;
+  }
+}
+
+@media (max-width: 540px) {
+  /* Pour un écran < 540px, cette classe CSS s'applique */
+  .container {
+    width: 300px;
+  }
+}
