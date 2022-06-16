@@ -1,29 +1,28 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Poppins:wght@300;400;500;700");
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
 
 body {
-  background-color: DFDFDE;
+  background:linear-gradient(rgb(109, 139, 116) 60%, rgb(255, 255, 255));
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   font-weight: 300;
-  line-height: 1em;
+  line-height: 2em;
 }
 
 h1, h2 {
   font-family: 'poppins', sans-serif;
   font-weight: 300;
-}
-
-h1 {
-  font-size: 32px;
-  color:#1f6482;
-  font-weight: bolder;
-  line-height:2rem
-}
-
-h2 {
-  font-size: 24px;
   color:#163e3a;
+  font-size: 24px;
 }
+
+h1{
+  font-family: 'Playfair display';
+  font-weight: 600;
+  font-size: 40px;
+  margin-left: 24px;
+}
+
 
 a {
   color: #59b17a;
@@ -44,13 +43,10 @@ li {
   font-size: 32px;
   margin: 0 8px;
 }
-.img-circle{
-  border-radius: 50%;
-}
 
 .container {
   padding: 25px 0;
-  width: 900px;
+  width: 700px;
   margin:auto;
 }
 
@@ -61,11 +57,30 @@ li {
   box-shadow: 0 10px 30px rgba(0,0,0,.2);
   text-align: center;
   border-radius: 4px;
-  background-color:white;
+  background: white;
+}
+
+.img-circle {
+  position: relative;
+  width: 550px;
+  height: 350px;
 }
 
 .list-inline {
   display: inline-block;
+}
+
+.fa-instagram{
+  color: rgb(138, 58, 185);
+}
+
+
+.fa-facebook{
+  color: rgb(59, 89, 152);
+}
+
+.fa-github{
+  color: black;
 }
 
 #special{
@@ -77,11 +92,16 @@ li {
   color: #1f6482;
 }
 
+#text-left{
+  text-align: left;
+}
+
 @media (max-width: 960px) {
   /* Pour un écran < 960px, cette classe CSS s'applique */
   .container {
     width: 700px;
   }
+
 }
 
 
@@ -90,11 +110,19 @@ li {
   .container {
     width: 500px;
   }
+  .img-circle {
+    width: 300px;
+    height: 175px;
+  }
 }
 
 @media (max-width: 540px) {
   /* Pour un écran < 540px, cette classe CSS s'applique */
   .container {
     width: 300px;
+  }
+  .img-circle {
+    width: 125px;
+    height: 90px;
   }
 }
