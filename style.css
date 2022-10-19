@@ -58,6 +58,8 @@ li {
   text-align: center;
   border-radius: 4px;
   background: white;
+  opacity: 0;
+  transform: translate(130px, -450px);
 }
 
 .img-circle {
@@ -74,7 +76,11 @@ li {
   color: rgb(138, 58, 185);
 }
 
-
+.visible {
+  opacity: 1;
+  transform: translate(0, 0);
+  transition: 1.5s cubic-bezier(0.5, 0, 0, 0.75)
+}
 .fa-facebook{
   color: rgb(59, 89, 152);
 }
@@ -82,6 +88,7 @@ li {
 .fa-github{
   color: black;
 }
+
 
 #special{
   color:#060707;
@@ -95,6 +102,11 @@ li {
 #text-left{
   text-align: left;
 }
+
+#autotext {
+  min-height: 50px;
+}
+
 
 @media (max-width: 960px) {
   /* Pour un écran < 960px, cette classe CSS s'applique */
